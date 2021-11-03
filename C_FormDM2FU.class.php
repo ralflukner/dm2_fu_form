@@ -2,6 +2,25 @@
 
 /**
  * diabetes_follow_up form
+ * - This initial version simply copies the SOAP form but renames SOAP everywhere to 
+ *   to reflect that this is a new form.  If this form is working correctly, then
+ *   I plan to make gradual modifications to transform this form into a complete
+ *   diabetes_follow_up form.  My hope is to be able to do everything I need to be
+ *   able to do within OpenEMR forms.
+ *
+ * - General plan for this form:
+ *   1. Prove the concept by simply renaming "SOAP" to "DM2FU" or another suitable name
+ *      throughout the code of the SOAP form files
+ *   2. Install and register the new DM2FU form on a AWS production system (after backing up
+ *      the production system EC2 as an image).
+ *   3. Gradually (one field at a time) incorporate some features of the following SOAPnote
+ *      project form:
+ *      https://www.soapnote.org/endocrine-metabolic/diabetes-management-clinic-2/
+ *      - Develop and Test the form code on a test AWS system that has a web server
+ *        prior to incorporating the changes into the new DM2FU under development.
+ *   5. The above Consider creating my own SOAPnote project form to reflect what I would like
+ *      in a Diabetes Mellitus Type 2 follow-up form.  Consider incorporating this into
+ *      the evolving DM2 follow-up form.
  *
  * @package   OpenEMR
  * @link      http://www.open-emr.org
